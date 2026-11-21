@@ -1,0 +1,15 @@
+{
+  "html_pages": 9,
+  "local_links_checked": 148,
+  "sources": 5,
+  "wiki_pages": 4,
+  "slides": 10,
+  "status": "PASS",
+  "checks": [
+    "每頁一個 h1 及繁體中文語言標記",
+    "沒有重複 HTML id",
+    "本機頁面、資源及錨點存在",
+    "來源至少 5 篇且不重複",
+    "Wiki 與簡報引用 ID 有效"
+  ]
+}

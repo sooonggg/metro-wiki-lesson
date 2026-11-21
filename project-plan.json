@@ -1,0 +1,76 @@
+{
+  "project": "臺北捷運新手乘車 Wiki",
+  "lesson": "第一次搭臺北捷運：買票、進站與安全乘車",
+  "stage": "資料準備完成；Wiki 綜合頁、HTML 簡報、公開發布尚未完成",
+  "discussion": {
+    "user_approved_topic": true,
+    "audience": "第一次搭臺北捷運的人；英文求助句協助外國旅客",
+    "language": "中文為主，加實用英文求助句",
+    "language_status": "已詢問；尚未收到選項回覆，暫用建議選項",
+    "scope": [
+      "車票與進出站",
+      "候車及上車",
+      "電扶梯安全",
+      "飲食區域與特殊情形",
+      "禮節與求助"
+    ],
+    "excluded": [
+      "即時班次",
+      "自動路線規劃",
+      "未查證的車站轉乘路徑"
+    ]
+  },
+  "implementation": "以可追溯來源筆記與互相連結的主題頁建立檔案式 Wiki；AI 整理知識後，簡報從 Wiki 取材。不是只把五篇網址貼到簡報。",
+  "workflow_v1": [
+    "討論主題",
+    "取得資料",
+    "整理 Wiki",
+    "規劃簡報",
+    "檢查",
+    "生成 HTML"
+  ],
+  "workflow_v2": [
+    "討論主題",
+    "取得資料",
+    "正文可用性與來源檢查",
+    "整理 Wiki",
+    "查詢 Wiki 與建立教學大綱",
+    "逐項內容與來源核對",
+    "生成 HTML",
+    "介面測試"
+  ],
+  "loops": [
+    {
+      "failure": "只有入口、圖片或選單，沒有支持教學內容的正文",
+      "return_to": "取得資料"
+    },
+    {
+      "failure": "簡報說法沒有 Wiki 依據或省略重要例外",
+      "return_to": "查詢 Wiki 與建立教學大綱"
+    },
+    {
+      "failure": "版面或操作有問題",
+      "return_to": "生成 HTML"
+    }
+  ],
+  "source_count": 5,
+  "checks": [
+    {
+      "date": "2026-11-21",
+      "node": "取得資料 → 正文可用性檢查",
+      "candidate_url": "https://www.metro.taipei/cp.aspx?n=73B51F32ED23C5E1",
+      "observed": "文字擷取顯示主內容僅有路網圖連結，沒有可支持轉乘教學的完整正文。",
+      "resolution": "不把該入口算成已匯入的五篇教材。改選捷運禮節的文字說明。",
+      "status": "已找到替代文字來源 S05"
+    },
+    {
+      "date": "2026-11-21",
+      "node": "正文可用性檢查",
+      "candidate_url": "https://www.metro.taipei/cp.aspx?n=640C4D2C8A1F3309",
+      "observed": "頁面主要呈現宣導圖片，另提供文字說明連結。",
+      "resolution": "點入文字說明後再讀取與摘要，來源記錄為實際正文頁 S05。",
+      "status": "通過"
+    }
+  ],
+  "reflection_note": "目前僅觀察到來源正文取得的兩次問題。不能據此宣稱全部流程中最常出錯的節點；待完整執行後再彙整。"
+}

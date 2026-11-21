@@ -1,0 +1,47 @@
+[
+  {
+    "id": "W01", "slug": "tickets", "title": "買票與通過閘門", "question": "第一次買單程票，要注意什麼？",
+    "intro": "先辨認拿到的是一般單程票還是 QR 單程票，再使用相對應的閘門方式。",
+    "claims": [
+      {"id": "ticket-validity", "title": "當天購買，當天使用", "text": "單程票發售當日有效。若打算隔天搭乘，不要把今天買的單程票留到明天用。", "sources": ["S01"]},
+      {"id": "ticket-gates", "title": "一般單程票：進站感應，出站回收", "text": "使用一般單程票進站時感應票卡；出站時由閘門回收。", "sources": ["S01"]},
+      {"id": "qr-gates", "title": "QR 單程票：進出站都掃碼", "text": "QR 單程票在進站及出站時都需掃描 QR 碼，不使用一般單程票的回收方式。", "sources": ["S01"]}
+    ],
+    "phrase": {"en": "Could you show me how to use this ticket?", "zh": "可以教我怎麼使用這張票嗎？", "label": "AI 編寫的練習句，非官方翻譯"},
+    "related": ["W02", "W04"]
+  },
+  {
+    "id": "W02", "slug": "boarding", "title": "從候車到安全上車", "question": "列車到了，我應該先做什麼？",
+    "intro": "月臺上的重點是排隊、讓出通道，以及避免在車門關閉時搶上車。",
+    "claims": [
+      {"id": "queue", "title": "依白線排隊，不跨越黃色警戒線", "text": "候車時依排隊線等候，保留通行空間，並留在黃色警戒線內側的安全區域。", "sources": ["S02"]},
+      {"id": "alight-first", "title": "先下後上，留意月臺間隙", "text": "讓下車旅客先離開，再上車；上下車時留意列車與月臺間隙。", "sources": ["S02"]},
+      {"id": "closing-doors", "title": "警示音響起，就等下一班", "text": "車門關閉警示音響起或警示燈閃爍時，不強行進出，也不以身體或物品阻擋車門。", "sources": ["S02"]},
+      {"id": "track-object", "title": "物品掉落軌道，請站務人員協助", "text": "不要自行進入軌道區撿拾物品，應透過月臺對講機等方式通知站務人員。", "sources": ["S02"]}
+    ],
+    "phrase": {"en": "I dropped something onto the tracks. Could you help me?", "zh": "我的東西掉到軌道上了，可以幫忙嗎？", "label": "AI 編寫的練習句，非官方翻譯"},
+    "related": ["W01", "W03"]
+  },
+  {
+    "id": "W03", "slug": "station-safety", "title": "站內移動與乘車禮節", "question": "帶著行李、推車或雨傘，怎麼移動比較安全？",
+    "intro": "這一頁把電扶梯安全與乘車禮節合在一起，方便依使用情境查閱。",
+    "claims": [
+      {"id": "escalator", "title": "看方向、站穩、握扶手", "text": "使用電扶梯前確認行進方向，搭乘時站穩並握好扶手，不奔跑；離開後不要停在出口。", "sources": ["S03"]},
+      {"id": "elevator", "title": "推車及大型行李改搭電梯", "text": "嬰兒車、手推車及大型行李不應推上電扶梯。有相關需求時改搭電梯，並禮讓需要協助的旅客。", "sources": ["S03", "S05"]},
+      {"id": "rain-phone", "title": "收好雨具，走路時留意周圍", "text": "雨天收妥雨具並留意濕滑地面；走路或上下樓梯時，不一邊走一邊使用手機。", "sources": ["S05"]},
+      {"id": "courtesy", "title": "把空間留給需要的人", "text": "禮讓有需要的旅客使用電梯、閘門與座位。", "sources": ["S05"]}
+    ],
+    "phrase": {"en": "Where is the elevator, please?", "zh": "請問電梯在哪裡？", "label": "AI 編寫的練習句，非官方翻譯"},
+    "related": ["W02", "W04"]
+  },
+  {
+    "id": "W04", "slug": "food-and-help", "title": "飲食界線與需要協助時", "question": "還沒進閘門，可以喝水嗎？",
+    "intro": "判斷飲食範圍要看禁止飲食線，不能只看是否已經通過閘門。特殊情形也要一起讀。",
+    "claims": [
+      {"id": "food-line", "title": "看禁止飲食線，不只看閘門", "text": "禁止飲食範圍從閘門前的黃色禁止飲食線內開始，喝水也包含在內。進入前先收妥食物及飲料。", "sources": ["S04", "S05"]},
+      {"id": "food-exceptions", "title": "有特殊需求，先尋求協助", "text": "因疾病、身體不適或嬰幼兒需要飲水、服藥、進食時，可洽站務人員協助。官方說明也列有依法保障的母乳哺育情形，不應把一般禁令說成毫無例外。", "sources": ["S04"]}
+    ],
+    "phrase": {"en": "I need to take my medicine. Could you help me?", "zh": "我需要服藥，可以請您協助嗎？", "label": "AI 編寫的練習句，非官方翻譯"},
+    "related": ["W01", "W03"]
+  }
+]

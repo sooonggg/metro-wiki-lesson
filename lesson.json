@@ -1,0 +1,12 @@
+[
+  {"type":"cover", "title":"第一次搭臺北捷運，\n從容出發。", "kicker":"給第一次搭乘的你", "subtitle":"從買票、進站到安全乘車。用 5 篇官方資料，學會一趟旅程的基本動作。", "query":"這份教材適合誰？", "wiki":[], "claims":[]},
+  {"type":"route", "title":"今天學會這四件事", "kicker":"學習地圖", "subtitle":"上完後，你能辨認票種、依序上車、選擇安全的站內移動方式，並知道何時求助。", "query":"新手乘車的主要階段是什麼？", "wiki":["W01","W02","W03","W04"], "claims":[]},
+  {"type":"content", "title":"買了單程票，\n隔天還能用嗎？", "kicker":"買票與進站", "query":"單程票的有效期限是什麼？進出站操作有何不同？", "wiki":["W01"], "claims":["ticket-validity","ticket-gates","qr-gates"], "phrase":"W01"},
+  {"type":"content", "title":"列車到了，\n先讓下車的人離開。", "kicker":"月臺與上車", "query":"如何在月臺排隊及上下車？", "wiki":["W02"], "claims":["queue","alight-first","closing-doors"]},
+  {"type":"content", "title":"帶推車或大行李，\n換一條安全的路。", "kicker":"站內移動", "query":"電扶梯有哪些安全注意事項？誰應改搭電梯？", "wiki":["W03"], "claims":["escalator","elevator"], "phrase":"W03"},
+  {"type":"content", "title":"還沒進閘門，\n也可能已在禁飲食區。", "kicker":"飲食界線", "query":"禁止飲食範圍在哪裡？有沒有特殊情形？", "wiki":["W04"], "claims":["food-line","food-exceptions"], "phrase":"W04"},
+  {"type":"content", "title":"把一點空間，\n留給需要的人。", "kicker":"一起舒服地搭車", "query":"雨天及站內行走有哪些禮節？", "wiki":["W03"], "claims":["rain-phone","courtesy"]},
+  {"type":"content", "title":"東西掉到軌道上？\n先找站務人員。", "kicker":"求助練習", "query":"物品掉落軌道時應如何處理？", "wiki":["W02"], "claims":["track-object"], "phrase":"W02"},
+  {"type":"quiz", "title":"換你試試看", "kicker":"三題情境練習", "query":"能否把票種、月臺、飲食規則用在情境題？", "wiki":["W01","W02","W04"], "claims":["ticket-validity","closing-doors","food-line","food-exceptions"]},
+  {"type":"end", "title":"知道怎麼搭，\n也知道去哪裡確認。", "kicker":"帶著這些重點出發", "query":"本課依據哪些文件？", "wiki":["W01","W02","W03","W04"], "claims":[]}
+]

@@ -1,0 +1,192 @@
+{
+  "built_at": "2026-11-21T15:26:12+08:00",
+  "execution_mode": "使用者與 Codex 討論；Codex 讀取網頁並整理來源與 Wiki；Python 依結構化大綱選取 Wiki 條目生成 HTML。不是網站訪客觸發的自動 LLM 工作流。",
+  "source_checks": [
+    {
+      "date": "2026-11-21",
+      "node": "取得資料 → 正文可用性檢查",
+      "candidate_url": "https://www.metro.taipei/cp.aspx?n=73B51F32ED23C5E1",
+      "observed": "文字擷取顯示主內容僅有路網圖連結，沒有可支持轉乘教學的完整正文。",
+      "resolution": "不把該入口算成已匯入的五篇教材。改選捷運禮節的文字說明。",
+      "status": "已找到替代文字來源 S05"
+    },
+    {
+      "date": "2026-11-21",
+      "node": "正文可用性檢查",
+      "candidate_url": "https://www.metro.taipei/cp.aspx?n=640C4D2C8A1F3309",
+      "observed": "頁面主要呈現宣導圖片，另提供文字說明連結。",
+      "resolution": "點入文字說明後再讀取與摘要，來源記錄為實際正文頁 S05。",
+      "status": "通過"
+    }
+  ],
+  "slide_queries": [
+    {
+      "slide": 1,
+      "question": "這份教材適合誰？",
+      "wiki": [],
+      "claims": [],
+      "sources": [],
+      "method": "AI 選定教學問題與條目；建置程式依 ID 讀取 Wiki 文字，沒有生成新的交通事實"
+    },
+    {
+      "slide": 2,
+      "question": "新手乘車的主要階段是什麼？",
+      "wiki": [
+        "W01",
+        "W02",
+        "W03",
+        "W04"
+      ],
+      "claims": [],
+      "sources": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05"
+      ],
+      "method": "AI 選定教學問題與條目；建置程式依 ID 讀取 Wiki 文字，沒有生成新的交通事實"
+    },
+    {
+      "slide": 3,
+      "question": "單程票的有效期限是什麼？進出站操作有何不同？",
+      "wiki": [
+        "W01"
+      ],
+      "claims": [
+        "ticket-validity",
+        "ticket-gates",
+        "qr-gates"
+      ],
+      "sources": [
+        "S01"
+      ],
+      "method": "AI 選定教學問題與條目；建置程式依 ID 讀取 Wiki 文字，沒有生成新的交通事實"
+    },
+    {
+      "slide": 4,
+      "question": "如何在月臺排隊及上下車？",
+      "wiki": [
+        "W02"
+      ],
+      "claims": [
+        "queue",
+        "alight-first",
+        "closing-doors"
+      ],
+      "sources": [
+        "S02"
+      ],
+      "method": "AI 選定教學問題與條目；建置程式依 ID 讀取 Wiki 文字，沒有生成新的交通事實"
+    },
+    {
+      "slide": 5,
+      "question": "電扶梯有哪些安全注意事項？誰應改搭電梯？",
+      "wiki": [
+        "W03"
+      ],
+      "claims": [
+        "escalator",
+        "elevator"
+      ],
+      "sources": [
+        "S03",
+        "S05"
+      ],
+      "method": "AI 選定教學問題與條目；建置程式依 ID 讀取 Wiki 文字，沒有生成新的交通事實"
+    },
+    {
+      "slide": 6,
+      "question": "禁止飲食範圍在哪裡？有沒有特殊情形？",
+      "wiki": [
+        "W04"
+      ],
+      "claims": [
+        "food-line",
+        "food-exceptions"
+      ],
+      "sources": [
+        "S04",
+        "S05"
+      ],
+      "method": "AI 選定教學問題與條目；建置程式依 ID 讀取 Wiki 文字，沒有生成新的交通事實"
+    },
+    {
+      "slide": 7,
+      "question": "雨天及站內行走有哪些禮節？",
+      "wiki": [
+        "W03"
+      ],
+      "claims": [
+        "rain-phone",
+        "courtesy"
+      ],
+      "sources": [
+        "S05"
+      ],
+      "method": "AI 選定教學問題與條目；建置程式依 ID 讀取 Wiki 文字，沒有生成新的交通事實"
+    },
+    {
+      "slide": 8,
+      "question": "物品掉落軌道時應如何處理？",
+      "wiki": [
+        "W02"
+      ],
+      "claims": [
+        "track-object"
+      ],
+      "sources": [
+        "S02"
+      ],
+      "method": "AI 選定教學問題與條目；建置程式依 ID 讀取 Wiki 文字，沒有生成新的交通事實"
+    },
+    {
+      "slide": 9,
+      "question": "能否把票種、月臺、飲食規則用在情境題？",
+      "wiki": [
+        "W01",
+        "W02",
+        "W04"
+      ],
+      "claims": [
+        "ticket-validity",
+        "closing-doors",
+        "food-line",
+        "food-exceptions"
+      ],
+      "sources": [
+        "S01",
+        "S02",
+        "S04",
+        "S05"
+      ],
+      "method": "AI 選定教學問題與條目；建置程式依 ID 讀取 Wiki 文字，沒有生成新的交通事實"
+    },
+    {
+      "slide": 10,
+      "question": "本課依據哪些文件？",
+      "wiki": [
+        "W01",
+        "W02",
+        "W03",
+        "W04"
+      ],
+      "claims": [],
+      "sources": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05"
+      ],
+      "method": "AI 選定教學問題與條目；建置程式依 ID 讀取 Wiki 文字，沒有生成新的交通事實"
+    }
+  ],
+  "automated_checks": [
+    "5 篇來源網址互不重複",
+    "所有 Wiki 事實都有有效來源 ID",
+    "簡報引用的條目 ID 均存在於 Wiki",
+    "Wiki 相關頁面 ID 均存在",
+    "5 篇來源皆用於教學簡報"
+  ]
+}
